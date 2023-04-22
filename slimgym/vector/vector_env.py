@@ -3,8 +3,8 @@ from typing import Any, List, Optional, Tuple, Union
 
 import numpy as np
 
-import gym
-from gym.vector.utils.spaces import batch_space
+import slimgym as gym
+from slimgym.vector.utils.spaces import batch_space
 
 __all__ = ["VectorEnv"]
 

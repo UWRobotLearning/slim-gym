@@ -1,10 +1,10 @@
 """Module for vector environments."""
 from typing import Iterable, List, Optional, Union
 
-import gym
-from gym.vector.async_vector_env import AsyncVectorEnv
-from gym.vector.sync_vector_env import SyncVectorEnv
-from gym.vector.vector_env import VectorEnv, VectorEnvWrapper
+import slimgym as gym
+from slimgym.vector.async_vector_env import AsyncVectorEnv
+from slimgym.vector.sync_vector_env import SyncVectorEnv
+from slimgym.vector.vector_env import VectorEnv, VectorEnvWrapper
 
 __all__ = ["AsyncVectorEnv", "SyncVectorEnv", "VectorEnv", "VectorEnvWrapper", "make"]
 

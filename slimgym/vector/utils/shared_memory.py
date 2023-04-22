@@ -7,8 +7,8 @@ from typing import Union
 
 import numpy as np
 
-from gym.error import CustomSpaceError
-from gym.spaces import Box, Dict, Discrete, MultiBinary, MultiDiscrete, Space, Tuple
+from slimgym.error import CustomSpaceError
+from slimgym.spaces import Box, Dict, Discrete, MultiBinary, MultiDiscrete, Space, Tuple
 
 __all__ = ["create_shared_memory", "read_from_shared_memory", "write_to_shared_memory"]
 

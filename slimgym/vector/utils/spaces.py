@@ -6,8 +6,8 @@ from typing import Iterator
 
 import numpy as np
 
-from gym.error import CustomSpaceError
-from gym.spaces import Box, Dict, Discrete, MultiBinary, MultiDiscrete, Space, Tuple
+from slimgym.error import CustomSpaceError
+from slimgym.spaces import Box, Dict, Discrete, MultiBinary, MultiDiscrete, Space, Tuple
 
 BaseGymSpaces = (Box, Discrete, MultiDiscrete, MultiBinary)
 _BaseGymSpaces = BaseGymSpaces

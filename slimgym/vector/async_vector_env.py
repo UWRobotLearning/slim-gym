@@ -8,16 +8,15 @@ from typing import List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 
-import gym
-from gym import logger
-from gym.core import ObsType
-from gym.error import (
+import slimgym as gym
+from slimgym.core import ObsType
+from slimgym.error import (
     AlreadyPendingCallError,
     ClosedEnvironmentError,
     CustomSpaceError,
     NoAsyncCallError,
 )
-from gym.vector.utils import (
+from slimgym.vector.utils import (
     CloudpickleWrapper,
     clear_mpi_env_vars,
     concatenate,
@@ -27,7 +26,10 @@ from gym.vector.utils import (
     read_from_shared_memory,
     write_to_shared_memory,
 )
-from gym.vector.vector_env import VectorEnv
+from slimgym.vector.vector_env import VectorEnv
+
+import logging
+logger = logging.getLogger() # get "root" logger
 
 __all__ = ["AsyncVectorEnv"]
 
@@ -454,7 +456,7 @@ class AsyncVectorEnv(VectorEnv):
         timeout = 0 if terminate else timeout
         try:
             if self._state != AsyncState.DEFAULT:
-                logger.warn(
+                logger.warning(
                     f"Calling `close` while waiting for a pending call to `{self._state.value}` to complete."
                 )
                 function = getattr(self, f"{self._state.value}_wait")
