@@ -3,9 +3,11 @@ from typing import Iterable, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
 
-from gym import logger
-from gym.spaces.discrete import Discrete
-from gym.spaces.space import Space
+from slimgym.spaces.discrete import Discrete
+from slimgym.spaces.space import Space
+
+import logging
+logger = logging.getLogger() # get "root" logger
 
 
 class MultiDiscrete(Space[np.ndarray]):
@@ -165,7 +167,7 @@ class MultiDiscrete(Space[np.ndarray]):
     def __len__(self):
         """Gives the ``len`` of samples from this space."""
         if self.nvec.ndim >= 2:
-            logger.warn(
+            logger.warning(
                 "Getting the length of a multi-dimensional MultiDiscrete space."
             )
         return len(self.nvec)

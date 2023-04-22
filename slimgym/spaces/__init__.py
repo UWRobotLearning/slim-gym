@@ -8,17 +8,17 @@ are vectors in the two-dimensional unit cube, the environment code may contain t
     self.action_space = spaces.Discrete(3)
     self.observation_space = spaces.Box(0, 1, shape=(2,))
 """
-from gym.spaces.box import Box
-from gym.spaces.dict import Dict
-from gym.spaces.discrete import Discrete
-from gym.spaces.graph import Graph, GraphInstance
-from gym.spaces.multi_binary import MultiBinary
-from gym.spaces.multi_discrete import MultiDiscrete
-from gym.spaces.sequence import Sequence
-from gym.spaces.space import Space
-from gym.spaces.text import Text
-from gym.spaces.tuple import Tuple
-from gym.spaces.utils import flatdim, flatten, flatten_space, unflatten
+from slimgym.spaces.box import Box
+from slimgym.spaces.dict import Dict
+from slimgym.spaces.discrete import Discrete
+from slimgym.spaces.graph import Graph, GraphInstance
+from slimgym.spaces.multi_binary import MultiBinary
+from slimgym.spaces.multi_discrete import MultiDiscrete
+from slimgym.spaces.sequence import Sequence
+from slimgym.spaces.space import Space
+from slimgym.spaces.text import Text
+from slimgym.spaces.tuple import Tuple
+from slimgym.spaces.utils import flatdim, flatten, flatten_space, unflatten
 
 __all__ = [
     "Space",

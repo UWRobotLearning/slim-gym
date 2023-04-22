@@ -3,11 +3,10 @@ from typing import NamedTuple, Optional, Sequence, Tuple, Union
 
 import numpy as np
 
-from gym.logger import warn
-from gym.spaces.box import Box
-from gym.spaces.discrete import Discrete
-from gym.spaces.multi_discrete import MultiDiscrete
-from gym.spaces.space import Space
+from slimgym.spaces.box import Box
+from slimgym.spaces.discrete import Discrete
+from slimgym.spaces.multi_discrete import MultiDiscrete
+from slimgym.spaces.space import Space
 
 
 class GraphInstance(NamedTuple):

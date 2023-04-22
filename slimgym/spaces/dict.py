@@ -9,7 +9,7 @@ from typing import Tuple, Union
 
 import numpy as np
 
-from gym.spaces.space import Space
+from slimgym.spaces.space import Space
 
 
 class Dict(Space[TypingDict[str, Space]], Mapping):

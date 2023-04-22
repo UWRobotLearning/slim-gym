@@ -11,7 +11,7 @@ from typing import TypeVar, Union, cast
 
 import numpy as np
 
-from gym.spaces import (
+from utilsgym.spaces import (
     Box,
     Dict,
     Discrete,

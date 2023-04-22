@@ -7,7 +7,7 @@ from typing import Union
 
 import numpy as np
 
-from gym.spaces.space import Space
+from slimgym.spaces.space import Space
 
 
 class Tuple(Space[tuple], CollectionSequence):

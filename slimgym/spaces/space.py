@@ -16,7 +16,7 @@ from typing import (
 
 import numpy as np
 
-from gym.utils import seeding
+from slimgym.utils import seeding
 
 T_cov = TypeVar("T_cov", covariant=True)
 

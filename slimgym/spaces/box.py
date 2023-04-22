@@ -1,12 +1,11 @@
 """Implementation of a space that represents closed boxes in euclidean space."""
 from typing import Dict, List, Optional, Sequence, SupportsFloat, Tuple, Type, Union
 
-import numpy as np
+import slimgym.error
+from slimgym.spaces.space import Space
 
-import gym.error
-from gym import logger
-from gym.spaces.space import Space
-
+import logging
+logger = logging.getLogger() #get "root" logger
 
 def _short_repr(arr: np.ndarray) -> str:
     """Create a shortened string representation of a numpy array.
@@ -124,7 +123,7 @@ class Box(Space[np.ndarray]):
         high_precision = get_precision(high.dtype)
         dtype_precision = get_precision(self.dtype)
         if min(low_precision, high_precision) > dtype_precision:  # type: ignore
-            logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+            logger.warning(f"Box bound precision lowered by casting to {self.dtype}")
         self.low = low.astype(self.dtype)
         self.high = high.astype(self.dtype)
 
@@ -135,7 +134,7 @@ class Box(Space[np.ndarray]):
 
     @property
     def shape(self) -> Tuple[int, ...]:
-        """Has stricter type than gym.Space - never None."""
+        """Has stricter type than slimgym.Space - never None."""
         return self._shape
 
     @property
@@ -186,7 +185,7 @@ class Box(Space[np.ndarray]):
             A sampled value from the Box
         """
         if mask is not None:
-            raise gym.error.Error(
+            raise slimgym.error.Error(
                 f"Box.sample cannot be provided a mask, actual value: {mask}"
             )
 
@@ -224,7 +223,7 @@ class Box(Space[np.ndarray]):
     def contains(self, x) -> bool:
         """Return boolean specifying if x is a valid member of this space."""
         if not isinstance(x, np.ndarray):
-            logger.warn("Casting input x to numpy array.")
+            logger.warning("Casting input x to numpy array.")
             try:
                 x = np.asarray(x, dtype=self.dtype)
             except (ValueError, TypeError):

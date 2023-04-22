@@ -4,8 +4,8 @@ from typing import Any, List, Optional, Tuple, Union
 
 import numpy as np
 
-import gym
-from gym.spaces.space import Space
+import slimgym
+from slimgym.spaces.space import Space
 
 
 class Sequence(Space[Tuple]):
@@ -34,7 +34,7 @@ class Sequence(Space[Tuple]):
             seed: Optionally, you can use this argument to seed the RNG that is used to sample from the space.
         """
         assert isinstance(
-            space, gym.Space
+            space, slimgym.Space
         ), f"Expects the feature space to be instance of a gym Space, actual type: {type(space)}"
         self.feature_space = space
         super().__init__(
