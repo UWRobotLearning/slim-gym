@@ -1,4 +1,5 @@
 from setuptools import find_packages, setup
+from slimgym import __version__
 
 setup(
     author="Robot Learning",
@@ -18,6 +19,6 @@ setup(
     packages=find_packages(),
     python_requires=">=3.6",
     url="https://www.gymlibrary.dev/",
-    version=0.26.0,
+    version=__version__,
     zip_safe=False,
 )
