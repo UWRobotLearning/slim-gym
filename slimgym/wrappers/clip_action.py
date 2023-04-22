@@ -1,9 +1,9 @@
 """Wrapper for clipping actions within a valid bound."""
 import numpy as np
 
-import gym
-from gym import ActionWrapper
-from gym.spaces import Box
+import slimgym as gym
+from slimgym import ActionWrapper
+from slimgym.spaces import Box
 
 
 class ClipAction(ActionWrapper):

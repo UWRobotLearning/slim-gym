@@ -1,8 +1,8 @@
 """Wrapper that converts a color observation to grayscale."""
 import numpy as np
 
-import gym
-from gym.spaces import Box
+import slimgym as gym
+from slimgym.spaces import Box
 
 
 class GrayScaleObservation(gym.ObservationWrapper):

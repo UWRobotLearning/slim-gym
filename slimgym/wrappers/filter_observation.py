@@ -2,8 +2,8 @@
 import copy
 from typing import Sequence
 
-import gym
-from gym import spaces
+import slimgym as gym
+from slimgym import spaces
 
 
 class FilterObservation(gym.ObservationWrapper):

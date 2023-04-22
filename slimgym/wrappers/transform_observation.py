@@ -1,7 +1,7 @@
 """Wrapper for transforming observations."""
 from typing import Any, Callable
 
-import gym
+import slimgym as gym
 
 
 class TransformObservation(gym.ObservationWrapper):

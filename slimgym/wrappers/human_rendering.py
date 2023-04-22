@@ -1,8 +1,8 @@
 """A wrapper that adds human-renering functionality to an environment."""
 import numpy as np
 
-import gym
-from gym.error import DependencyNotInstalled
+import slimgym as gym
+from slimgym.error import DependencyNotInstalled
 
 
 class HumanRendering(gym.Wrapper):

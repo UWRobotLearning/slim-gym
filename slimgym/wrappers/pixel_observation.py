@@ -6,8 +6,8 @@ from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
 
-import gym
-from gym import spaces
+import slimgym as gym
+from slimgym import spaces
 
 STATE_KEY = "state"
 

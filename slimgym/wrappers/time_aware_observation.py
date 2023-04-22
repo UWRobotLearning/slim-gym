@@ -1,8 +1,8 @@
 """Wrapper for adding time aware observations to environment observation."""
 import numpy as np
 
-import gym
-from gym.spaces import Box
+import slimgym as gym
+from slimgym.spaces import Box
 
 
 class TimeAwareObservation(gym.ObservationWrapper):

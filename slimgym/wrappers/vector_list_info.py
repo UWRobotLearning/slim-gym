@@ -2,7 +2,7 @@
 
 from typing import List
 
-import gym
+import slimgym as gym
 
 
 class VectorListInfo(gym.Wrapper):

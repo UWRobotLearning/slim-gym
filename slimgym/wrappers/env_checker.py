@@ -1,7 +1,7 @@
 """A passive environment checker wrapper for an environment's observation and action space along with the reset, step and render functions."""
-import gym
-from gym.core import ActType
-from gym.utils.passive_env_checker import (
+import slimgym as gym
+from slimgym.core import ActType
+from slimgym.utils.passive_env_checker import (
     check_action_space,
     check_observation_space,
     env_render_passive_checker,

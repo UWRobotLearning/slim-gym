@@ -3,8 +3,8 @@ from typing import Union
 
 import numpy as np
 
-import gym
-from gym import spaces
+import slimgym as gym
+from slimgym import spaces
 
 
 class RescaleAction(gym.ActionWrapper):

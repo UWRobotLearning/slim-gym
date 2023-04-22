@@ -1,7 +1,7 @@
 """Wrapper for limiting the time steps of an environment."""
 from typing import Optional
 
-import gym
+import slimgym as gym
 
 
 class TimeLimit(gym.Wrapper):

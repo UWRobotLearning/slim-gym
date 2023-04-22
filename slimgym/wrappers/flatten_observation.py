@@ -1,6 +1,6 @@
 """Wrapper for flattening observations of an environment."""
-import gym
-import gym.spaces as spaces
+import slimgym as gym
+import slimgym.spaces as spaces
 
 
 class FlattenObservation(gym.ObservationWrapper):

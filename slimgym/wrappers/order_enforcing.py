@@ -1,6 +1,6 @@
 """Wrapper to enforce the proper ordering of environment operations."""
-import gym
-from gym.error import ResetNeeded
+import slimgym as gym
+from slimgym.error import ResetNeeded
 
 
 class OrderEnforcing(gym.Wrapper):

@@ -5,7 +5,7 @@ from typing import Optional
 
 import numpy as np
 
-import gym
+import slimgym as gym
 
 
 def add_vector_episode_statistics(

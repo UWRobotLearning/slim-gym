@@ -1,8 +1,8 @@
 """Wrapper for transforming the reward."""
 from typing import Callable
 
-import gym
-from gym import RewardWrapper
+import slimgym as gym
+from slimgym import RewardWrapper
 
 
 class TransformReward(RewardWrapper):

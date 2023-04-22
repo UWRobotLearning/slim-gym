@@ -1,7 +1,7 @@
 """Set of wrappers for normalizing actions and observations."""
 import numpy as np
 
-import gym
+import slimgym as gym
 
 
 # taken from https://github.com/openai/baselines/blob/master/baselines/common/vec_env/vec_normalize.py

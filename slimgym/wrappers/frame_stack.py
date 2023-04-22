@@ -4,9 +4,9 @@ from typing import Union
 
 import numpy as np
 
-import gym
-from gym.error import DependencyNotInstalled
-from gym.spaces import Box
+import slimgym as gym
+from slimgym.error import DependencyNotInstalled
+from slimgym.spaces import Box
 
 
 class LazyFrames:

@@ -1,5 +1,5 @@
 """A wrapper that adds render collection mode to an environment."""
-import gym
+import slimgym as gym
 
 
 class RenderCollection(gym.Wrapper):

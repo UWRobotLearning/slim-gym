@@ -1,5 +1,5 @@
 """Wrapper that autoreset environments when `terminated=True` or `truncated=True`."""
-import gym
+import slimgym as gym
 
 
 class AutoResetWrapper(gym.Wrapper):
