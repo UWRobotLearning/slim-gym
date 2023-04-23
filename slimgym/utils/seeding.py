@@ -3,7 +3,7 @@ from typing import Any, Optional, Tuple
 
 import numpy as np
 
-from gym import error
+from slimgym import error
 
 
 def np_random(seed: Optional[int] = None) -> Tuple[np.random.Generator, Any]:
