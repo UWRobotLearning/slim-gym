@@ -1,6 +1,8 @@
 from setuptools import find_packages, setup
 from slimgym import __version__
 
+requires = [numpy]
+
 setup(
     author="Robot Learning",
     author_email="robotlearning@cs.uw.edu",
@@ -16,6 +18,7 @@ setup(
     description="Gym: A universal API for reinforcement learning environments",
     license="MIT",
     name="slimgym",
+    requires=requires,
     packages=find_packages(),
     python_requires=">=3.6",
     url="https://www.gymlibrary.dev/",
