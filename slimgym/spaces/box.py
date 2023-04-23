@@ -4,6 +4,8 @@ from typing import Dict, List, Optional, Sequence, SupportsFloat, Tuple, Type, U
 import slimgym.error
 from slimgym.spaces.space import Space
 
+import numpy as np
+
 import logging
 logger = logging.getLogger() #get "root" logger
 
