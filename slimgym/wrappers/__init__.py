@@ -1,6 +1,5 @@
 """Module of wrapper classes."""
 from slimgym import error
-from slimgym.wrappers.atari_preprocessing import AtariPreprocessing
 from slimgym.wrappers.autoreset import AutoResetWrapper
 from slimgym.wrappers.clip_action import ClipAction
 from slimgym.wrappers.filter_observation import FilterObservation

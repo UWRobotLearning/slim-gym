@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 from slimgym import __version__
 
-requires = [numpy]
+requires = ["numpy"]
 
 setup(
     author="Robot Learning",

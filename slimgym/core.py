@@ -16,14 +16,16 @@ from typing import (
 import numpy as np
 
 from slimgym import spaces
-from slimgym.logger import warn
 from slimgym.utils import seeding
+
+import logging
+logger = logging.getLogger() # get reference to "root" logger
 
 if TYPE_CHECKING:
     from slimgym.envs.registration import EnvSpec
 
 if sys.version_info[0:2] == (3, 6):
-    warn(
+    logger.warning(
         "Gym minimally supports python 3.6 as the python foundation not longer supports the version, please update your version to 3.7+"
     )
 
